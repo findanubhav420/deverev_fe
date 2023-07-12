@@ -1,0 +1,47 @@
+.login-signup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-image {
+    width: 50%;
+    height: 100%;
+    background: url('../../assets/images/login-image.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.signup-image {
+    width: 50%;
+    height: 100%;
+    background: url('../../assets/images/signup-image.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.login-signup-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

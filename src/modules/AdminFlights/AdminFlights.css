@@ -1,0 +1,37 @@
+.admin-flights-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.admin-flights-all {
+    padding: 20px 0;
+    height: calc(90vh - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.admin-flight {
+    margin: 0 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.flight-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+}

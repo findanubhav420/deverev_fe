@@ -1,0 +1,53 @@
+.search {
+
+}
+
+.search-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.search-header:nth-child(1) {
+    font-size: larger;
+}
+
+.search-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-results {
+    padding: 20px 0;
+    height: calc(90vh - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.search-flight {
+    margin: 0 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+}
