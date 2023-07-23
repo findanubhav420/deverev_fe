@@ -90,7 +90,7 @@ const Search = () => {
                     const dateTimeString = date + ' ' + dateTime.time;
                     const filteredFlights = res.filter((flight) => {
                         console.log(moment(flight.departureTime).format('YYYY-MM-DD HH:mm'),  dateTimeString);
-                        return moment(flight.departureTime).format('YYYY-MM-DDTHH:mm') == dateTimeString && flight.source === source && flight.destination === destination;
+                        return moment(flight.departureTime).format('YYYY-MM-DDTHH:mm') == dateTimeString && flight.source.toLowerCase() === source.toLowerCase() && flight.destination.toLowerCase() === destination.toLowerCase() ;
                     })
 
                     setFlights(filteredFlights);
@@ -98,7 +98,7 @@ const Search = () => {
                 else if(dateTime.date !== '' && dateTime.time === '' && source !== '' && destination !== '') {
                     const date = moment(dateTime.date).format('YYYY-MM-DD');
                     const filteredFlights = res.filter((flight) => {
-                        return moment(flight.departureTime).format('YYYY-MM-DD') === date && flight.source === source && flight.destination === destination;
+                        return moment(flight.departureTime).format('YYYY-MM-DD') === date && flight.source.toLowerCase() === source.toLowerCase() && flight.destination.toLowerCase() === destination.toLowerCase();
                     })
 
                     setFlights(filteredFlights);
@@ -114,7 +114,7 @@ const Search = () => {
                 }
                 else if(source !== '' && destination !== '' && dateTime.date === '' && dateTime.time === '') {
                     const filteredFlights = res.filter((flight) => {
-                        return flight.source === source && flight.destination === destination;
+                        return flight.source.toLowerCase() === source.toLowerCase() && flight.destination.toLowerCase() === destination.toLowerCase();
                     })
 
                     setFlights(filteredFlights);
