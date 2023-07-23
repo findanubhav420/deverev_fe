@@ -1,5 +1,11 @@
 .search {
+ margin-top: 10px;
+}
 
+.title2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .search-header {

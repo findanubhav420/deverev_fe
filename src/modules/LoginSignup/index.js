@@ -18,7 +18,6 @@ const LoginSignup = ({formType}) => {
       },
     });
     localStorage.setItem('token', response.data.token);
-    localStorage.setItem('user', response.data.user);
     navigate('/search');
   };
 
@@ -40,7 +39,6 @@ const LoginSignup = ({formType}) => {
       },
     });
     localStorage.setItem('token', response.data.token);
-    localStorage.setItem('user', response.data.user);
     navigate('/admin');
   };
 
@@ -54,6 +52,7 @@ const LoginSignup = ({formType}) => {
             <div className='buttons'>
               <Button variant='outlined' onClick={formType==="login"?handleUserLogin:handleUserSignup}>{formType} as user</Button>
               {(formType==="login")&&(<Button variant='outlined' onClick={handleAdminLogin}>{formType} as admin</Button>)}
+              {(formType==="login")&&<Button variant='outlined' onClick={() => navigate('/signup')}>Sign up</Button>} 
             </div>
         </div>
     </div>

@@ -35,3 +35,8 @@
     padding: 10px;
     margin: 20px;
 }
+
+.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+}

@@ -36,9 +36,39 @@ export const ADDFLIGHT = {
   method: 'post'
 }
 
-export const DELETEFLIGHT =(flightId) => {
+export const DELETEFLIGHT = (flightId) => {
  return { 
-  url: '/flights/:flightId',
+  url: `/flights/${flightId}`,
   method: 'delete'
 }
 }
+
+export const GETALLBOOKINGSBYID = (userId) => {
+  return {
+    url: `/bookings/${userId}`,
+    method: 'get'
+  }
+}
+
+export const DELETEBOOKING = (bookingId) => {
+  return {
+    url: `/bookings/${bookingId}`,
+    method: 'delete'
+  }
+}
+
+export const GETALLFLIGHTBOOKINGS = (flightId) => {
+  return {
+    url: `/bookings/flight/${flightId}`,
+    method: 'get'
+  }
+}
+
+export const GETFLIGHTBYID = (flightId) => {
+  return {
+    url: `/flights/${flightId}`,
+    method: 'get'
+  }
+}
+
+
