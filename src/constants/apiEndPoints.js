@@ -1,7 +1,5 @@
-require('dotenv').config();
-
-export const BACKEND_URL = process.env.BACKEND;
-export const AUTH_URL = process.env.AUTH;
+export const BACKEND_URL = "http://localhost:8080";
+export const AUTH_URL = "http://localhost:4000";
 
 export const USERLOGIN = {
   url: '/userLogin',
